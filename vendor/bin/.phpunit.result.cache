@@ -1,0 +1,1 @@
+{"version":1,"defects":{"SearchTest::testGetAddressFromZipCodeDefaultUsage":4},"times":{"SearchTest::testGetAddressFromZipCodeDefaultUsage":0.017,"SearchTest::testGetAddressFromZipCodeDefaultUsage with data set \"Endere\u00e7o Pra\u00e7a da S\u00e9\"":0.619,"SearchTest::testGetAddressFromZipCodeDefaultUsage with data set \"Endere\u00e7o Casa\"":0.565}}

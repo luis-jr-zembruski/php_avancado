@@ -1,0 +1,23 @@
+{
+    "name": "luis/php_avancado",
+    "autoload": {
+        "psr-4": {
+            "Luis\\PhpAvancado\\": "src/"
+        },
+        "classmap": [
+            "src/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "luis-jr-zembruski",
+            "email": "luis.jr.zembruski@icloud.com"
+        }
+    ],
+    "require": {
+        "wead/digital-cep": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    }
+}
