@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Luis\\CepApi\\Search' => $baseDir . '/src/Search.php',
+    'Luis\\CepApi\\ws\\ViaCep' => $baseDir . '/src/ws/ViaCep.php',
     'PHPUnit\\Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
     'PHPUnit\\Framework\\Assert' => $vendorDir . '/phpunit/phpunit/src/Framework/Assert.php',
     'PHPUnit\\Framework\\AssertionFailedError' => $vendorDir . '/phpunit/phpunit/src/Framework/Exception/AssertionFailedError.php',

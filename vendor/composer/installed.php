@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '08aba513e213278daecc1a43ea3cf4f49b7ca338',
+        'reference' => 'e530fa12c32186dd16fd06802ed565a0504486b5',
         'name' => 'luis/php_avancado',
         'dev' => true,
     ),
@@ -25,7 +25,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '08aba513e213278daecc1a43ea3cf4f49b7ca338',
+            'reference' => 'e530fa12c32186dd16fd06802ed565a0504486b5',
             'dev_requirement' => false,
         ),
         'myclabs/deep-copy' => array(
