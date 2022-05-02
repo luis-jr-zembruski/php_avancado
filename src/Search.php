@@ -2,29 +2,32 @@
 
 namespace Luis\CepApi;
 
-class Search {
+class Search
+{
+    private $url = 'https://viacep.com.br/ws/';
 
-  private $url = 'https://viacep.com.br/ws/';
+    public function getAdressFromZipcode(string $zipcode): array
+    {
+        $zipCode = preg_replace('/[^0-9]/im', '', $zipcode);
 
-  public function getAdressFromZipcode(string $zipcode): array {
-    $zipCode = preg_replace('/[^0-9]/im', '', $zipcode);
+        $get = $this->getFromServer($zipCode);
 
-    $get = $this->getFromServer($zipCode);
-
-    return (array) json_decode($get);
-  }
-
-  private function getFromServer($zipCode) {
-    $get = file_get_contents($this->url . $zipCode . '/json/');
-
-    return $get;
-  }
-
-  private function processData($data) {
-    foreach ($data as $k => $v) {
-      $data[$k] = trim($v);
+        return (array) json_decode($get);
     }
 
-    return $data;
-  }
+    private function getFromServer($zipCode)
+    {
+        $get = file_get_contents($this->url . $zipCode . '/json/');
+
+        return $get;
+    }
+
+    private function processData($data)
+    {
+        foreach ($data as $k => $v) {
+            $data[$k] = trim($v);
+        }
+
+        return $data;
+    }
 }
